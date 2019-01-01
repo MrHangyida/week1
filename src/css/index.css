@@ -1,0 +1,319 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: relative; }
+  .wrap header {
+    width: 100%;
+    height: 1.17333rem;
+    background: #eee;
+    padding: 0 0.26667rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start; }
+    .wrap header p i {
+      font-size: 0.42667rem; }
+    .wrap header p:nth-child(2) {
+      font-size: 0.42667rem;
+      margin-left: 35%; }
+  .wrap section {
+    width: 100%;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow: hidden; }
+    .wrap section .content {
+      width: 100%;
+      padding: 0 0.26667rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box; }
+      .wrap section .content dl {
+        width: 100%;
+        height: 2.13333rem;
+        margin-top: 0.13333rem;
+        box-shadow: 0.05333rem 0.05333rem 0.05333rem #ccc;
+        border: 1px solid #ccc;
+        border-radius: 0.08rem;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: space-between;
+        justify-content: space-between; }
+        .wrap section .content dl dt {
+          margin-left: 0.13333rem; }
+          .wrap section .content dl dt h3 {
+            font-size: 0.42667rem;
+            font-weight: bold; }
+          .wrap section .content dl dt p {
+            font-size: 0.42667rem;
+            margin-top: 0.26667rem; }
+        .wrap section .content dl dd i {
+          font-size: 0.48rem;
+          margin-right: 0.13333rem; }
+  .wrap footer {
+    width: 100%;
+    height: 1.17333rem;
+    color: #fff; }
+    .wrap footer p {
+      background: orange;
+      text-align: center;
+      line-height: 1.17333rem;
+      font-size: 0.42667rem; }
+  .wrap .login {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    .wrap .login .hang {
+      width: 6rem;
+      height: 3.46667rem;
+      background: #fff;
+      border-radius: 0.08rem;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      -webkit-flex-direction: column;
+      flex-direction: column; }
+      .wrap .login .hang h5 {
+        width: 100%;
+        height: 1.06667rem;
+        text-align: center;
+        line-height: 1.06667rem;
+        font-size: 0.42667rem; }
+      .wrap .login .hang input {
+        margin-left: 0.4rem;
+        margin-bottom: 0.4rem;
+        height: 0.8rem;
+        width: 80%;
+        background: #eee; }
+      .wrap .login .hang .btns {
+        width: 100%;
+        -webkit-flex: 1 1 0%;
+        flex: 1 1 0%;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: space-around;
+        justify-content: space-around; }
+        .wrap .login .hang .btns p {
+          -webkit-flex: 1 1 0%;
+          flex: 1 1 0%;
+          height: 100%;
+          font-size: 0.37333rem;
+          color: #ccc;
+          border-top: 1px solid #ccc;
+          display: flex;
+          /* NEW, Spec - Opera 12.1, Firefox 20+ */
+          display: -webkit-flex;
+          /* NEW - Chrome */
+          -webkit-align-items: center;
+          align-items: center;
+          -webkit-justify-content: center;
+          justify-content: center; }
+        .wrap .login .hang .btns p:nth-child(2) {
+          color: orange;
+          border-left: 1px solid #ccc; }
+  .wrap .niu {
+    display: none; }
